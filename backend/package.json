@@ -1,7 +1,7 @@
 {
   "name": "events_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "event management app",
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
@@ -9,8 +9,8 @@
     
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "yashraj",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
