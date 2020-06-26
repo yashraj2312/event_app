@@ -9,7 +9,7 @@ export default function EventsPage({ history }) {
     const [description, setDescription] = useState('')
     const [price, setPrice] = useState('')
     const [thumbnail, setThumbnail] = useState(null)
-    const [sport, setSport] = useState('Sport')
+    const [sport, setSport] = useState('Type')
     const [date, setDate] = useState('')
     const [error, setError] = useState(false)
     const [success, setSuccess] = useState(false)
@@ -100,9 +100,9 @@ export default function EventsPage({ history }) {
                             <Button id="caret" value={sport} disabled>{sport}</Button>
                             <DropdownToggle caret />
                             <DropdownMenu>
-                                <DropdownItem onClick={() => sportEventHandler('running')}>running</DropdownItem>
-                                <DropdownItem onClick={() => sportEventHandler('cycling')}>cycling</DropdownItem>
-                                <DropdownItem onClick={() => sportEventHandler('swimming')}>swimming</DropdownItem>
+                                <DropdownItem onClick={() => sportEventHandler('hackathon')}>Hackathon</DropdownItem>
+                                <DropdownItem onClick={() => sportEventHandler('bootcamp')}>Bootcamp</DropdownItem>
+                                <DropdownItem onClick={() => sportEventHandler('summit')}>Summit</DropdownItem>
                             </DropdownMenu>
                         </ButtonDropdown>
                     </FormGroup>
